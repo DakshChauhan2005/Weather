@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <div class="outer-container">
+        <div class="gap-container"></div>
+        <!-- Header start -->
+        <div class="header-container">
+            <h3>Weather</h3>   
+            <div class="searchbar-container">
+                <div class="searchbar">
+                    <input type="text" id="search-text" placeholder="Enter city Name...">
+                    <img src="resource/search.png" id="searchbtn"  alt="">
+                </div>
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <!-- header end -->
+        <div class="gap-container"></div>
+        <div class="main-container">
+            <div class="left-container">
+                <div class="icon"><img id="Wheather-logo" src="resource/moonrise.png" alt=""></div>
+                <div class="temprature"><p id="written-temp">--&deg;</p></div>
+                <div class="location"><p id="writen-location">Location, Region, Country</p></div>
+            </div>
+            <div class="right-container">
+                <div class="time-container">
+                    <p id="timezone">Timezone: -----------</p>
+                </div>
+                <div class="day-container">
+                    <p id="feeltemp">Temprature Feels like : -- &deg; </p>
+                </div>
+            </div>
+        </div>
+        <div class="gap-container"></div>
+        <div class="lower-container">
+            <button id="detailsbtn">Details</button>
+            <button id="astrobtn">Astro</button>
+        </div>
+        <div class="gap-container"></div>
+        <!-- Details Container -->
+        <div class="changable1" id="details-container">
+            <!-- feels like -->
+            <div class="inner-box1">
+                <div class="img">
+                    <img src="resource/feelslike.png" alt="">
+                </div>
+                <div class="inner-value">
+                    <h3>Feels like</h3>
+                    <div class="gap-container"></div>
+                    <p id="feelsLike"> -- &deg;</p>
+                </div>
+            </div>
+            <!-- wind -->
+            <div class="inner-box1">
+                <div class="img">
+                    <img src="resource/wind.png" alt="">
+                </div>
+                <div class="inner-value">
+                    <h3>Wind Speed</h3>
+                    <div class="gap-container"></div>
+                    <p id="wind"> --- Km/h</p>
+                </div>
+            </div>
+            <!-- visibility -->
+            <div class="inner-box1">
+                <div class="img">
+                    <img src="resource/visibility.png" alt="">
+                </div>
+                <div class="inner-value">
+                    <h3>visibility</h3>
+                    <div class="gap-container"></div>
+                    <p id="visibility"> -- Km</p>
+                </div>
+            </div>
+            <!-- humidity -->
+            <div class="inner-box1">
+                <div class="img">
+                    <img src="resource/humidity.png" alt="">
+                </div>
+                <div class="inner-value">
+                    <h3>humidity</h3>
+                    <div class="gap-container"></div>
+                    <p id="humidity"> -- </p>
+                </div>
+            </div>
+            <!-- uv -->
+            <div class="inner-box1">
+                <div class="img">
+                    <img src="resource/uv.png" alt="">
+                </div>
+                <div class="inner-value">
+                    <h3>UV</h3>
+                    <div class="gap-container"></div>
+                    <p id="uv"> -- </p>
+                </div>
+            </div>
+            <!-- air preaaure -->
+            <div class="inner-box1">
+                <div class="img">
+                    <img src="resource/pressure.png" alt="">
+                </div>
+                <div class="inner-value">
+                    <h3>Air Pressure</h3>
+                    <div class="gap-container"></div>
+                    <p id="airPressure"> -- </p>
+                </div>
+            </div>  
+        </div>
+        <!-- Astro Container -->
+        <div class="astro-container" id="astro-container">
+            <div class="inner-astro-container">
+                <div class="img">
+                    <img src="resource/sunrise.png" alt="">
+                </div>
+                <div class="inner-value">
+                    <h3>Sunrise at</h3>
+                    <div class="gap-container"></div>
+                    <p id="sunrise"> -- </p>
+                </div>
+            </div>
+            <div class="inner-astro-container">
+                <div class="img">
+                    <img src="resource/moonrise.png" alt="">
+                </div>
+                <div class="inner-value">
+                    <h3>Moonrise at</h3>
+                    <div class="gap-container"></div>
+                    <p id="moonrise"> -- </p>
+                </div>
+            </div>
+            <div class="inner-astro-container">
+                <div class="img">
+                    <img src="resource/sunset.png" alt="">
+                </div>
+                <div class="inner-value">
+                    <h3>Sunset at</h3>
+                    <div class="gap-container"></div>
+                    <p id="sunset"> -- </p>
+                </div>
+            </div>
+            <div class="inner-astro-container">
+                <div class="img">
+                    <img src="resource/moonset.png" alt="">
+                </div>
+                <div class="inner-value">
+                    <h3>Moonset at</h3>
+                    <div class="gap-container"></div>
+                    <p id="moonset"> -- </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

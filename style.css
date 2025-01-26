@@ -1,0 +1,884 @@
+body{
+    margin: 0;
+    background-image: url(resource/bg.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.outer-container{
+    height: 90%;
+    width: 80%;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 10px );
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header-container{
+    height: 10%;
+    width: 90%;
+    /* background-color: #ffffff; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-container h3{
+    font-size: 2.5rem;
+}
+.header-container .searchbar-container{
+    width: 30%;
+    height: 2.5rem;
+    /* background-color: #818cff; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.header-container .searchbar-container i{
+    font-size: 2.1rem;
+    cursor: pointer;
+}
+
+.header-container .searchbar-container .searchbar{
+    height: 100%;
+    width: 80%;
+    display: flex;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px black;
+}
+.header-container .searchbar-container .searchbar input{
+    all: unset;
+    height: 100%;
+    width: 90%;
+    padding-left: 8px;
+}
+.header-container .searchbar-container .searchbar img{
+    height: 100%;
+    cursor: pointer;
+}
+.gap-container{
+    height: 3%;
+    width: 90%;
+}
+.main-container{
+    height: 40%;
+    width: 90%;
+    /* background: rgba( 255, 255, 255, 0.2 ); */
+    background-image: url(resource/inner-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    /* backdrop-filter:blur(10px); */
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    color: #ffffff;
+}
+/* inner left container  */
+.main-container .left-container{
+    height: 80%;
+    width: 25%;
+    /* background-color: #818cff; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.main-container .left-container .icon{
+    height: 30%;
+    width: 25%;
+    display: flex;
+    align-items: end;
+}
+.main-container .left-container .icon img{
+    padding-left: 1rem;
+    height: 100%;
+    color: black;
+}
+.main-container .left-container .temprature{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    padding: 0 0 0 10px ;
+    align-items: center;
+}
+.main-container .left-container .temprature p{
+    padding: 0 0 0 20px ;
+    height: 100%;
+    margin: 0px;
+    font-size: 7rem;
+}
+.main-container .left-container .location{
+    height: 15%;
+    width: 140%;
+    padding: 0 0 0 10px;
+}
+.main-container .left-container .location p{
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0 0 0 20px;
+    
+}
+/* inner right container  */
+.main-container .right-container{
+    height: 24%;
+    width: 25%;
+}
+.main-container .right-container .time-container{
+    text-align: end;
+    padding-right: 20px;
+    font-size: 2rem;
+}
+.main-container .right-container .time-container p{
+    margin: 0;
+}
+.main-container .right-container .day-container{
+    text-align: end;
+    padding-right: 20px;
+    font-size: 1.5rem;
+}
+.main-container .right-container .day-container p{
+    margin: 10px 0 ;
+}
+.lower-container{
+    height: 5%;
+    width: 90%;
+    background: rgba( 255, 255, 255, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 10px );
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lower-container button{
+    all: unset;
+    text-align: center;
+    /* background-color: #ffffff; */
+    height: 60%;
+    width: 100px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: .25s;
+    font-size: 1.2rem;
+
+}
+.lower-container button:hover{
+    transition: .25s;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+}
+/* detail container */
+.changable1{
+    height: 30%;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items:center ;
+    transition: 1s;
+}
+.changable1 .inner-box1{
+    height: 45%;
+    width: 30%;
+    margin: 10px 0px;
+    background-color: whitesmoke;
+    background: rgba( 255, 255, 255, 0.4 );
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+}
+.changable1 .inner-box1 .img{
+    height: 50%;
+    margin-left: 15px;
+}
+.changable1 .inner-box1 .img img{
+    height: 100%;
+}
+.changable1 .inner-box1 .inner-value{
+    width: 65%;
+    margin-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.changable1 .inner-box1 .inner-value h3{
+    /* width: 100%; */
+    /* margin-left: 20px; */
+    font-size: 2rem;
+    margin: 05px;
+}
+.changable1 .inner-box1 .inner-value p {
+    font-size: 1.5rem;
+    margin: 0px;
+    width: 100%;
+    text-align: center;
+}
+/* astro container */
+.astro-container{
+    height: 30%;
+    width: 90%;
+    display: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items:center ;
+    transition: 1s;
+    /* display: none; */
+    /* background-color: #fff; */
+}
+.astro-container .inner-astro-container{
+    height: 45%;
+    width: 47.5%;
+    margin: 10px 0px;
+    background-color: whitesmoke;
+    background: rgba( 255, 255, 255, 0.4 );
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.astro-container .inner-astro-container .img{
+    height: 65%;
+    margin-left: 15px;
+}
+.astro-container .inner-astro-container .img img{
+    height: 100%;
+}
+.astro-container .inner-astro-container .inner-value{
+    width: 65%;
+    margin-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.astro-container .inner-astro-container .inner-value h3{
+    /* width: 100%; */
+    /* margin-left: 20px; */
+    font-size: 2rem;
+    margin: 05px;
+}
+.astro-container .inner-astro-container .inner-value p {
+    font-size: 1.5rem;
+    margin: 0px;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+
+
+@media (min-width: 1280px){
+    body{
+        margin: 0;
+    }
+    .outer-container{
+        transition: .75s;
+        height: 90%;
+        width: 90%;
+        margin: 0;
+    }
+    .header-container{
+        height: 7%;
+        width: 95%;
+    }
+    .header-container h3{
+        font-size: 2.5rem;
+    }
+    .header-container .searchbar-container{
+        width: 35%;
+    }
+    .header-container .searchbar-container i{
+        font-size: 2.3rem;
+    }
+    .header-container .searchbar-container .searchbar{
+
+    }
+    .header-container .searchbar-container .searchbar input{
+
+    }
+    .header-container .searchbar-container .searchbar img{
+
+    }
+    .gap-container{
+        height: 3%;
+        width: 95%;
+    }
+    .main-container{
+        height: 40%;
+        width: 95%;
+    }
+    /* inner left container  */
+    .main-container .left-container{
+
+    }
+    .main-container .left-container .icon{
+
+    }
+    .main-container .left-container .icon img{
+        height: 90%;
+    }
+    .main-container .left-container .temprature{
+        height: 25%;
+    }
+    .main-container .left-container .temprature p{
+        padding: 0 0 0 20px ;
+        height: 100%;
+        margin: 0px;
+        font-size: 3.5rem;
+    }
+    .main-container .left-container .location{
+        height: 15%;
+        width: 140%;
+        padding: 0 0 0 10px;
+    }
+    .main-container .left-container .location p{
+        font-size: 1.5rem;
+    }
+    /* inner right container  */
+    .main-container .right-container{
+        height: 25%;
+        width: 45%;
+    }
+    .main-container .right-container .time-container{
+        font-size: 1.5rem;
+    }
+    .main-container .right-container .time-container p{
+        margin: 0;
+    }
+    .main-container .right-container .day-container{
+        font-size: 1.5rem;
+    }
+    .main-container .right-container .day-container p{
+        margin: 10px 0 ;
+    }
+    .lower-container{
+        width: 95%;
+    }
+    .lower-container button{
+    
+    }
+    .lower-container button:hover{
+
+    }
+    /* detail container */
+    .changable1{
+        width: 95%;
+    }
+    .changable1 .inner-box1{
+    
+    }
+    .changable1 .inner-box1 .img{
+        height: 50%;
+        margin-left: 15px;
+    }
+    .changable1 .inner-box1 .img img{
+        height: 100%;
+    }
+    .changable1 .inner-box1 .inner-value{
+    }
+    .changable1 .inner-box1 .inner-value h3{
+        font-size: 1.75rem;
+        margin: 05px;
+    }
+    .changable1 .inner-box1 .inner-value p {
+        font-size: 1.4rem;
+    }
+    /* astro container */
+    .astro-container{
+        height: 33%;
+        width: 95%;
+    }
+    .astro-container .inner-astro-container{
+    }
+    .astro-container .inner-astro-container .img{
+    }
+    .astro-container .inner-astro-container .img img{
+        height: 100%;
+    }
+    .astro-container .inner-astro-container .inner-value{
+    }
+    .astro-container .inner-astro-container .inner-value h3{
+        font-size: 1.75rem;
+    }
+    .astro-container .inner-astro-container .inner-value p {
+        font-size: 1.4rem;
+        margin: 7px 0;
+    }    
+}@media (min-width: 1020px) and (max-width:1279px){
+    .outer-container{
+        transition: .75s;
+        height: 95%;
+        width: 95%;
+    }
+    .header-container{
+        height: 7%;
+        width: 95%;
+    }
+    .header-container h3{
+        font-size: 2.2rem;
+    }
+    .header-container .searchbar-container{
+        width: 35%;
+    }
+    .header-container .searchbar-container i{
+        font-size: 2.2rem;
+    }
+    .header-container .searchbar-container .searchbar{
+    height: 85%;
+    }
+    .main-container{
+        height: 40%;
+        width: 95%;
+    }
+    .main-container .left-container{
+        height: 90%;
+    }
+    .main-container .left-container .icon img{
+        height: 75%;
+    }
+    .main-container .left-container .temprature{
+        height: 25%;
+    }
+    .main-container .left-container .temprature p{
+        font-size: 3rem;
+    }
+    .main-container .left-container .location p{
+        font-size: 1.35rem;
+    }
+    /* inner right container  */
+    .main-container .right-container{
+        height: 30%;
+        width: 50%;
+    }
+    .main-container .right-container .time-container{
+        font-size: 1.35rem;
+    }
+    .main-container .right-container .time-container p{
+        margin: 0;
+    }
+    .main-container .right-container .day-container{
+        font-size: 1.35rem;
+    }
+    .main-container .right-container .day-container p{
+        margin: 10px 0 ;
+    }
+    .lower-container{
+        width: 95%;
+    }
+    .changable1{
+        width: 95%;
+    }
+    .changable1 .inner-box1 .img img{
+        height: 100%;
+    }
+    .changable1 .inner-box1 .inner-value h3{
+        font-size: 1.5rem;
+        margin: 05px;
+    }
+    .changable1 .inner-box1 .inner-value p {
+        font-size: 1.2rem;
+    }
+    .astro-container{
+        height: 30%;
+        width: 95%;
+    }
+    .astro-container .inner-astro-container .img img{
+        height: 100%;
+    }
+    .astro-container .inner-astro-container .inner-value h3{
+        font-size: 1.5rem;
+    }
+    .astro-container .inner-astro-container .inner-value p {
+        font-size: 1.2rem;
+    }    
+}@media (min-width: 770px) and (max-width:1019px){
+    .outer-container{
+        transition: .75s;
+        height: 95%;
+        width: 95%;
+    }
+    .header-container{
+        height: 7%;
+        width: 95%;
+    }
+    .header-container h3{
+        font-size: 2.2rem;
+    }
+    .header-container .searchbar-container{
+        width: 35%;
+    }
+    .header-container .searchbar-container i{
+        font-size: 2.2rem;
+    }
+    .header-container .searchbar-container .searchbar{
+    height: 85%;
+    }
+    .main-container{
+        height: 40%;
+        width: 95%;
+    }
+    .main-container .left-container{
+        height: 90%;
+    }
+    .main-container .left-container .icon img{
+        height: 75%;
+    }
+    .main-container .left-container .temprature{
+        height: 25%;
+    }
+    .main-container .left-container .temprature p{
+        font-size: 3rem;
+    }
+    .main-container .left-container .location p{
+        font-size: 1.35rem;
+    }
+    /* inner right container  */
+    .main-container .right-container{
+        height: 30%;
+        width: 50%;
+    }
+    .main-container .right-container .time-container{
+        font-size: 1.35rem;
+    }
+    .main-container .right-container .time-container p{
+        margin: 0;
+    }
+    .main-container .right-container .day-container{
+        font-size: 1.35rem;
+    }
+    .main-container .right-container .day-container p{
+        margin: 10px 0 ;
+    }
+    .lower-container{
+        width: 95%;
+    }
+    .changable1{
+        width: 95%;
+    }
+    .changable1 .inner-box1 .img img{
+        height: 100%;
+    }
+    .changable1 .inner-box1 .inner-value h3{
+        font-size: 1.5rem;
+        margin: 05px;
+    }
+    .changable1 .inner-box1 .inner-value p {
+        font-size: 1.2rem;
+    }
+    .astro-container{
+        height: 30%;
+        width: 95%;
+    }
+    .astro-container .inner-astro-container .img img{
+        height: 100%;
+    }
+    .astro-container .inner-astro-container .inner-value h3{
+        font-size: 1.5rem;
+    }
+    .astro-container .inner-astro-container .inner-value p {
+        font-size: 1.2rem;
+    }    
+}@media (min-width: 600px) and (max-width:769px){
+    body{
+        margin: 0;
+    }
+    .outer-container{
+        transition: .75s;
+        height: 98%;
+        width: 98%;
+    }
+    .header-container{
+        height: 7%;
+        width: 95%;
+    }
+    .header-container h3{
+        font-size: 2rem;
+    }
+    .header-container .searchbar-container{
+        width: 40%;
+    }
+    .header-container .searchbar-container i{
+        font-size: 2rem;
+    }
+    .header-container .searchbar-container .searchbar{
+    height: 70%;
+    }
+    .main-container{
+        height: 40%;
+        width: 95%;
+    }
+    .main-container .left-container{
+        height: 100%;
+    }
+    .main-container .left-container .icon img{
+        height: 75%;
+    }
+    .main-container .left-container .temprature{
+        height: 20%;
+    }
+    .main-container .left-container .temprature p{
+        font-size: 2.35rem;
+    }
+    .main-container .left-container .location p{
+        font-size: 1rem;
+    }
+    /* inner right container  */
+    .main-container .right-container{
+        height: 30%;
+        width: 50%;
+    }
+    .main-container .right-container .time-container{
+        font-size: 1rem;
+    }
+    .main-container .right-container .time-container p{
+        margin: 0;
+    }
+    .main-container .right-container .day-container{
+        font-size: 1rem;
+    }
+    .main-container .right-container .day-container p{
+        margin: 10px 0 ;
+    }
+    .lower-container{
+        width: 95%;
+    }
+    .changable1{
+        width: 95%;
+    }
+    .changable1 .inner-box1 .img img{
+        height: 70%;
+    }
+    .changable1 .inner-box1 .inner-value h3{
+        font-size: 1.1rem;
+        margin: 0px;
+    }
+    .changable1 .inner-box1 .inner-value p {
+        font-size: 1rem;
+    }
+    .astro-container{
+        height: 30%;
+        width: 95%;
+    }
+    .astro-container .inner-astro-container .img img{
+        height: 100%;
+    }
+    .astro-container .inner-astro-container .inner-value h3{
+        font-size: 1.5rem;
+    }
+    .astro-container .inner-astro-container .inner-value p {
+        font-size: 1.2rem;
+    }    
+}@media (max-width: 480px){
+    body{
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+    }
+    .outer-container{
+        height: 95%;
+        width: 95%;
+    }
+    .header-container{
+        height: 15%;
+        width: 90%;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .header-container h3{
+        font-size: 2rem;
+        margin: 0;
+    }
+    .header-container .searchbar-container{
+        width: 100%;
+        margin:0;
+        height: 2.5rem;
+    }
+    .gap-container{
+        height: 1%;
+        width: 90%;
+    }
+    /* inner left container  */
+    .main-container{
+        width: 95%;
+    }
+    .main-container .left-container{
+        height: 80%;
+        width: 100%;
+    }
+    .main-container .left-container .icon{
+        height: 20%;
+        width: 25%;
+        display: flex;
+        align-items: end;
+    }
+    .main-container .left-container .temprature{
+        height: 20%;
+        width: 100%;
+    }
+    .main-container .left-container .temprature p{
+        font-size: 2.5rem;
+    }
+    .main-container .left-container .location{
+        width: 100%;
+    }
+    .main-container .left-container .location p{
+        font-size: 1rem;
+        margin: 0;
+        height: fit-content;
+        padding: 0 0 0 20px;
+        
+    }
+    /* inner right container  */
+    .main-container .right-container{
+        display: none;
+    }
+    .lower-container{
+        height: 5%;
+        width: 95%;
+        background: rgba( 255, 255, 255, 0.2 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 10px );
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .lower-container button{
+        all: unset;
+        text-align: center;
+        /* background-color: #ffffff; */
+        height: 60%;
+        width: 100px;
+        margin: 0 10px;
+        cursor: pointer;
+        transition: .25s;
+        font-size: 1.2rem;
+    
+    }
+    .lower-container button:hover{
+        transition: .25s;
+        border-right: 1px solid black;
+        border-left: 1px solid black;
+    }
+    /* detail container */
+    .changable1{
+        height: 30%;
+        width: 95%;
+        display: flex;
+        flex-wrap: wrap;
+        transition: 1s;
+        overflow-y: scroll;
+    }
+    .changable1 .inner-box1{
+        height: 25%;
+        width: 100%;
+        margin: 3px 0px;
+    }
+    .changable1 .inner-box1 .img{
+        height: 90%;
+    }
+    .changable1 .inner-box1 .img img{
+        height: 100%;
+    }
+    .changable1 .inner-box1 .inner-value{
+        width: 65%;
+        margin-left: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .changable1 .inner-box1 .inner-value h3{
+        font-size: 1rem;
+        margin: 05px;
+    }
+    .changable1 .inner-box1 .inner-value p {
+        font-size: .75rem;
+        margin: 0px;
+    }
+    /* astro container */
+    .astro-container{
+        height: 30%;
+        width: 90%;
+        display: none;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items:center ;
+        transition: 1s;
+        /* display: none; */
+        /* background-color: #fff; */
+    }
+    .astro-container .inner-astro-container{
+        height: 45%;
+        width: 47.5%;
+        margin: 10px 0px;
+        background-color: whitesmoke;
+        background: rgba( 255, 255, 255, 0.4 );
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+    }
+    .astro-container .inner-astro-container .img{
+        height: 65%;
+        margin-left: 15px;
+    }
+    .astro-container .inner-astro-container .img img{
+        height: 100%;
+    }
+    .astro-container .inner-astro-container .inner-value{
+        width: 65%;
+        margin-left: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .astro-container .inner-astro-container .inner-value h3{
+        /* width: 100%; */
+        /* margin-left: 20px; */
+        font-size: 2rem;
+        margin: 05px;
+    }
+    .astro-container .inner-astro-container .inner-value p {
+        font-size: 1.5rem;
+        margin: 0px;
+        width: 100%;
+        text-align: center;
+    }
+    
+    
+    
+    .hrs{
+        height: 30%;
+        width: 90%;
+        display: none;
+        flex-wrap: wrap;
+        /* justify-content: space-between; */
+        /* align-items:center ; */
+        transition: 1s;
+        /* background-color: pink; */
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+    .hrs .hrs-lines{
+        height: 3rem;
+        width: 100%;
+        background-color: #ffffff;
+        border-radius: 10px;
+        margin-bottom: 8px;
+        display: flex;
+        justify-content:space-evenly;
+    }
+
+
+}
